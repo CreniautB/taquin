@@ -5,9 +5,9 @@ import EndGame from '../endGame/endGame'
 function Taquin({currentList, orderList, endGame, setEndGame}){
 
     const [tour, setTour] = useState(0) 
-
     const grid = useRef(null)
-    
+    const [finalArray, setArray] = useState([])
+
     if (JSON.stringify(currentList) === JSON.stringify(orderList)){
         setEndGame(true)
     }
@@ -25,6 +25,7 @@ function Taquin({currentList, orderList, endGame, setEndGame}){
                         let temp = currentList[idTarget+1]
                         currentList[idTarget+1] = currentList[e.target.id]
                         currentList[e.target.id] = temp
+                        setArray(currentList)
                     }
                 }
                 if (idTarget-1 >= 0 && idTarget-1 < 16 ){
@@ -33,6 +34,7 @@ function Taquin({currentList, orderList, endGame, setEndGame}){
                         let temp = currentList[idTarget-1]
                         currentList[idTarget-1] = currentList[e.target.id]
                         currentList[e.target.id] = temp
+                        setArray(currentList)
                     }
                 }
 
@@ -42,6 +44,7 @@ function Taquin({currentList, orderList, endGame, setEndGame}){
                         let temp = currentList[idTarget+4]
                         currentList[idTarget+4] = currentList[e.target.id]
                         currentList[e.target.id] = temp
+                        setArray(currentList)
                     }
                 }
 
@@ -51,6 +54,7 @@ function Taquin({currentList, orderList, endGame, setEndGame}){
                         let temp = currentList[idTarget-4]
                         currentList[idTarget-4] = currentList[e.target.id]
                         currentList[e.target.id] = temp
+                        setArray(currentList)
                     }
                 }
                 setTour(tour + 1) 
@@ -68,21 +72,12 @@ function Taquin({currentList, orderList, endGame, setEndGame}){
             } 
         }
 
+
+
     if (endGame) {
-        let note = 5
 
-        currentList.forEach((elem, index) => {
-            if(elem === orderList[index]){
-                note ++
-            }
-        })
-
-        if (note > 20) {
-            note = 20
-        }
-        
         return (
-            <EndGame note={note}/>
+            <EndGame finalArray={finalArray} orderList={orderList}/>
         )
     }
 

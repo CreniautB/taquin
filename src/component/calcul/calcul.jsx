@@ -9,7 +9,7 @@ function Calcul ({list, setGoTaquin }) {
 
     const input = useRef(null);
 
-    if(nextStep >= 15 ) {
+    if(nextStep >= 1 ) {
         setGoTaquin(true)
     }
 
