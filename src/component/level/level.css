@@ -1,0 +1,54 @@
+.grid {
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.item {
+  z-index: 999;
+  width: 75px;
+  height: 75px;
+  border-radius: 30px;
+  background: rgba(255, 127, 39, 0.95);
+  text-align: center;
+  line-height: 75px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.greenItem {
+  background-color: rgba(17, 209, 69, 0.95);
+}
+
+.greenSquare {
+  background-color: rgba(17, 209, 69, 0.95);
+}
+
+input {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  height: 25px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  max-width: 100px;
+  letter-spacing: 2px;
+}
+
+.timeOut {
+  font-size: 21px;
+  margin-top: 2em;
+}
+/*# sourceMappingURL=level.css.map */

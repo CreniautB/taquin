@@ -1,0 +1,75 @@
+body {
+  background-color: rgba(255, 127, 39, 0.95);
+  padding: 1em;
+}
+
+.homePage {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1em;
+  text-align: center;
+}
+
+.buttonLink {
+  list-style: none;
+  background-color: rgba(17, 209, 69, 0.95);
+  padding: 10px;
+  border-radius: 5px;
+  color: White;
+  margin: auto;
+  -webkit-box-shadow: 0px 0px 0.95px 0.95px rgba(17, 209, 69, 0.95);
+          box-shadow: 0px 0px 0.95px 0.95px rgba(17, 209, 69, 0.95);
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+  letter-spacing: 0.80px;
+}
+
+.button {
+  list-style: none;
+  background-color: rgba(17, 209, 69, 0.95);
+  padding: 10px;
+  border-radius: 5px;
+  color: White;
+  margin: 0.4em;
+  -webkit-box-shadow: 0px 0px 0.95px 0.95px rgba(17, 209, 69, 0.95);
+          box-shadow: 0px 0px 0.95px 0.95px rgba(17, 209, 69, 0.95);
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.green {
+  color: rgba(17, 209, 69, 0.95);
+}
+
+.orange {
+  color: rgba(255, 127, 39, 0.95);
+}
+
+.regle {
+  text-transform: lowercase;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+*
+.levelChoice {
+  margin-bottom: 1em;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.chronoChoice {
+  margin-top: 2em;
+  font-size: 23px;
+  margin-bottom: 1.5em;
+}
+
+.endGame {
+  font-size: 22px;
+}
+/*# sourceMappingURL=homePage.css.map */
