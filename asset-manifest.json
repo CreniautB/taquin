@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/taquin/static/css/main.6a985423.chunk.css",
+    "main.js": "/taquin/static/js/main.d50cf33f.chunk.js",
+    "main.js.map": "/taquin/static/js/main.d50cf33f.chunk.js.map",
+    "runtime-main.js": "/taquin/static/js/runtime-main.6d12f24d.js",
+    "runtime-main.js.map": "/taquin/static/js/runtime-main.6d12f24d.js.map",
+    "static/js/2.ec88419c.chunk.js": "/taquin/static/js/2.ec88419c.chunk.js",
+    "static/js/2.ec88419c.chunk.js.map": "/taquin/static/js/2.ec88419c.chunk.js.map",
+    "static/js/3.428ba791.chunk.js": "/taquin/static/js/3.428ba791.chunk.js",
+    "static/js/3.428ba791.chunk.js.map": "/taquin/static/js/3.428ba791.chunk.js.map",
+    "index.html": "/taquin/index.html",
+    "static/css/main.6a985423.chunk.css.map": "/taquin/static/css/main.6a985423.chunk.css.map",
+    "static/js/2.ec88419c.chunk.js.LICENSE.txt": "/taquin/static/js/2.ec88419c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d12f24d.js",
+    "static/js/2.ec88419c.chunk.js",
+    "static/css/main.6a985423.chunk.css",
+    "static/js/main.d50cf33f.chunk.js"
+  ]
+}
