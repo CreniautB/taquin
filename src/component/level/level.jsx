@@ -38,7 +38,8 @@ function Level({level, chrono}){
     return ( 
         <div className="containerLvel">
             <br/>
-            <button className="time button">
+
+            {!endGame ? <button className="time button">
                 
                 <span>Il vous reste </span>
                 
@@ -60,7 +61,9 @@ function Level({level, chrono}){
                         )}
                     </Timer>
 
-                </button>
+                </button> : <> </> }
+
+
 
             {goTaquin ? <Taquin currentList={currentList} orderList={orderList} endGame={endGame} setEndGame={setEndGame} /> : <Calcul list={list} setGoTaquin={setGoTaquin} /> }
 
