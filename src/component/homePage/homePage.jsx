@@ -24,6 +24,7 @@ function HomePage() {
                 <h1 className="chronoChoice">
                     Choix du chrono
                 </h1>
+                <button className="button" onClick={() => setChrono(300000)} >5 minutes</button>
                 <button className="button" onClick={() => setChrono(600000)} >10 minutes</button>
                 <button className="button" onClick={() => setChrono(900000)} >15 minutes</button>
                 <button className="button" onClick={() => setChrono(1800000)} >30 minutes</button>
@@ -35,7 +36,7 @@ function HomePage() {
       <div className="homePage">
         
            <h1>
-               Jeux du Taquin<br/>
+               Jeu du Taquin<br/>
            </h1>
 
            <h2 className="regle">

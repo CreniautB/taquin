@@ -65,7 +65,7 @@ function Level({level, chrono}){
 
 
 
-            {goTaquin ? <Taquin currentList={currentList} orderList={orderList} endGame={endGame} setEndGame={setEndGame}/> : <Calcul list={list} setGoTaquin={setGoTaquin} /> }
+            {goTaquin ? <Taquin currentList={currentList} orderList={orderList} endGame={endGame} setEndGame={setEndGame} level={level}/> : <Calcul list={list} setGoTaquin={setGoTaquin} level={level} /> }
 
         </div>
     )

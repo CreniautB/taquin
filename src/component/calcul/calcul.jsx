@@ -1,7 +1,7 @@
 import React, {useState, useRef} from 'react'
 import './calcul.css'
 
-function Calcul ({list, setGoTaquin }) {
+function Calcul ({list, setGoTaquin, level }) {
 
     const [currentTarget, setCurrentTarget] = useState(null)
     const [currentSquare, setCurrentSquare] = useState(null)
@@ -9,7 +9,7 @@ function Calcul ({list, setGoTaquin }) {
 
     const input = useRef(null);
 
-    if(nextStep >= 1 ) {
+    if(nextStep >= 15 ) {
         setGoTaquin(true)
     }
 
@@ -31,7 +31,6 @@ function Calcul ({list, setGoTaquin }) {
 
             setNextStep( nextStep + 1 )  
 
-
         }
         else{
             currentSquare.classList.remove('greenSquare')
@@ -40,7 +39,7 @@ function Calcul ({list, setGoTaquin }) {
 
     return (
         <>
-
+        <h1 className="levelList" >Liste n ° {level}</h1>
         <h1 className="regleCalcul">Trouver le résultat de chaque opération <br/> Cliquer sur une case pour sélectionner le calcul</h1>
 
         <div>

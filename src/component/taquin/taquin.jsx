@@ -2,7 +2,7 @@ import React, {useRef, useState} from 'react'
 import './taquin.css'
 import EndGame from '../endGame/endGame'
 
-function Taquin({currentList, orderList, endGame, setEndGame}){
+function Taquin({currentList, orderList, endGame, setEndGame, level}){
 
     const [tour, setTour] = useState(0) 
     const grid = useRef(null)
@@ -83,7 +83,7 @@ function Taquin({currentList, orderList, endGame, setEndGame}){
 
     return (
         <>      
-            
+            <h1 className='levelList'  >Liste n ° {level}</h1>
             <h1 className="regleTaquin">Mettre la liste dans l'ordre croissant <br/> en déplaçant la case vide en bas a droite</h1>
 
             <div onClick={(e) => clickOnGrid(e)} className="grid" ref={grid} >
